@@ -68,6 +68,13 @@
                                 Tweets by yukokuroberu
                             </a>
                             <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                            <script>
+                                window.onload = function() {
+                                    if (window.twttr && window.twttr.widgets) {
+                                        window.twttr.widgets.load();
+                                    }
+                                };
+                            </script>
                         </div>
                         <!-- X=Twitter區塊結束 -->
                     </li>
