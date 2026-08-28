@@ -60,6 +60,8 @@
                             >@Twitter</a>
                         <p>#補充簡單的介紹文</p>
                         <!-- 0828新增 X=Twitter區塊 -->
+                        <!-- 目前寫法為固定單一貼文 -->
+                        <!-- 08/27暫停使用，改測試動態流動牆 curator.io 
                         <div class="x-timeline-container">
                             <blockquote class="twitter-tweet" data-media-max-width="560">
                                 <p lang="ja" dir="ltr">ロベルないとめあ</p>&mdash; 夕刻ロベル🍷 (@yukokuroberu) 
@@ -68,6 +70,18 @@
                             <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
                         </div>
                         <!-- X=Twitter區塊結束 -->
+                        
+                        <!-- Place <div> tag where you want the feed to appear -->
+                        <div id="curator-feed-default-feed-layout"><a href="https://curator.io" target="_blank" class="crt-logo crt-tag">Powered by Curator.io</a></div>
+                        <!-- The Javascript can be moved to the end of the html page before the </body> tag -->
+                        <script type="text/javascript">
+                            /* curator-feed-default-feed-layout */
+                            (function(){
+                                var i,e,d=document,s="script";i=d.createElement("script");i.async=1;i.charset="UTF-8";
+                                i.src="https://cdn.curator.io/published/bfe40151-a5f4-4d42-8894-1c981153f64f.js";
+                                e=d.getElementsByTagName(s)[0];e.parentNode.insertBefore(i, e);
+                            })();
+                        </script>
                     </li>
                     <li>神樂めあ
                         <a href="https://www.youtube.com/@KaguraMea"
