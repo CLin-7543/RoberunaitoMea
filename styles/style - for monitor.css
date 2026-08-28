@@ -84,7 +84,7 @@ a + img {
 /* 新增：Curator 動態視窗高度與邊界設定 */
 .x-curator-container {
     margin-top: 15px;
-    max-height: 350px;
+    max-height: 150px;
     overflow-y: auto; /* 貼文過多時允許內部滾動 */
     border-radius: 8px;
 }
