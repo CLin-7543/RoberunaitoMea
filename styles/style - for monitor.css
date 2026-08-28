@@ -79,8 +79,20 @@ a + img {
     width: 60%;
 }
 
+/* 上文參考：網站外觀 (style - for monitor.css) */
+
+/* 新增：Curator 動態視窗高度與邊界設定 */
+.x-curator-container {
+    margin-top: 15px;
+    max-height: 600px;
+    overflow-y: auto; /* 貼文過多時允許內部滾動 */
+    border-radius: 8px;
+}
+
+/* 08/28暫停使用，改測試動態流動牆 curator.io 
 .x-timeline-container {
     margin-top: 10px;
     max-width: 100%;
     overflow: hidden;
 }
+*/
