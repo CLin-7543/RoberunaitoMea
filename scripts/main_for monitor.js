@@ -1,10 +1,10 @@
 const RoberunaitoMeaImage = document.querySelector("img");
     RoberunaitoMeaImage.onclick = () => {
     const mySrc = RoberunaitoMeaImage.getAttribute("src");
-    if (mySrc === "images/RoberunaitoMea_002_400x282.png") {
-        RoberunaitoMeaImage.setAttribute("src", "images/RoberunaitoMea_001_400x400.jpg");
+    if (mySrc === "images/RoberunaitoMea_002.png") {
+        RoberunaitoMeaImage.setAttribute("src", "images/RoberunaitoMea_001.jpg");
     } else {
-        RoberunaitoMeaImage.setAttribute("src", "images/RoberunaitoMea_002_400x282.png");
+        RoberunaitoMeaImage.setAttribute("src", "images/RoberunaitoMea_002.png");
     }
 };
 
