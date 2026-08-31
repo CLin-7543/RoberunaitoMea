@@ -73,10 +73,12 @@ a + img {
     /*border: 3px solid black;*/
 }
 
+/*2026/08/31 調整原始預設寬圖且壓縮圖檔的圖片區，改為可套用原始圖片*/
 .monitor_all img{
     display: block;
     margin: 0 auto;
-    width: 60%;
+    max-width: 100%; /* 不超過原圖 100% 寬度，且會在容器變小時代替縮小 */
+    height: auto;     /* 保持圖片原始寬高比例不變形 */
 }
 
 /* 上文參考：網站外觀 (style - for monitor.css) */
