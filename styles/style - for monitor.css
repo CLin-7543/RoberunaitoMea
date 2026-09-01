@@ -98,3 +98,27 @@ a + img {
     overflow: hidden;
 }
 */
+
+/* 新增：自訂 Curator 動態視窗固定範圍與穩定高度樣式 */
+/* 針對動態貼文調的高度限制用 */
+.x-curator-container {
+    width: 100%;
+    max-width: 500px;        /* 限制視窗最大寬度，可自行修改 */
+    height: 500px;           /* 強制固定視窗高度，防止網頁上下被跳動撐開 */
+    min-height: 400px;       /* 最低高度保障 */
+    margin: 10px 0;
+    padding: 8px;
+    background-color: #ffffff; /* 補齊背景色，避免簡短貼文時露出橘底造成視覺斷層 */
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    
+    /* 核心設定：當內容超過 500px 時自動在內部出現滾動條，不影響外部網頁 */
+    overflow-y: auto;        
+    box-sizing: border-box;
+}
+
+/* 確保 Curator 內建元件適應父層設定 */
+.x-curator-container .crt-feed-container {
+    height: 100% !important;
+    min-height: 100% !important;
+}
