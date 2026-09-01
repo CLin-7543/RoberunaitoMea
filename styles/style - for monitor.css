@@ -83,37 +83,21 @@ a + img {
 
 /* 上文參考：網站外觀 (style - for monitor.css) */
 
-/* 新增：Curator 動態視窗高度與邊界設定 */
-.x-curator-container {
-    margin-top: 15px;
-    max-height: 150px;
-    overflow-y: auto; /* 貼文過多時允許內部滾動 */
-    border-radius: 8px;
-}
 
-/* 08/28暫停使用，改測試動態流動牆 curator.io 
-.x-timeline-container {
-    margin-top: 10px;
-    max-width: 100%;
-    overflow: hidden;
-}
-*/
-
-/* 新增：自訂 Curator 動態視窗固定範圍與穩定高度樣式 */
-/* 針對動態貼文調的高度限制用 */
+/* 自訂 Curator 動態視窗固定範圍與穩定高度樣式 */
 .x-curator-container {
     width: 100%;
-    max-width: 500px;        /* 限制視窗最大寬度，可自行修改 */
-    height: 500px;           /* 強制固定視窗高度，防止網頁上下被跳動撐開 */
-    min-height: 400px;       /* 最低高度保障 */
-    margin: 10px 0;
-    padding: 8px;
-    background-color: #ffffff; /* 補齊背景色，避免簡短貼文時露出橘底造成視覺斷層 */
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    max-width: 500px;          /* 限制視窗最大寬度 */
+    height: 500px;             /* 強制固定視窗高度，防止跳動 */
+    min-height: 400px;         /* 最低高度保障 */
+    margin: 10px 0;            /* 外距（上下 10px，左右 0） */
+    padding: 8px;              /* 內距 */
+    background-color: #ffffff; /* 補齊背景色，避免簡短貼文露出底色 */
+    border-radius: 8px;        /* 圓角 */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* 陰影效果 */
     
-    /* 核心設定：當內容超過 500px 時自動在內部出現滾動條，不影響外部網頁 */
-    overflow-y: auto;        
+    /* 當內容超過 height 時在內部出現滾動條 */
+    overflow-y: auto;          
     box-sizing: border-box;
 }
 
