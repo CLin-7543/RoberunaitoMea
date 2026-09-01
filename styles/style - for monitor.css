@@ -86,9 +86,8 @@ a + img {
 
 /* 自訂 Curator 動態視窗固定範圍與穩定高度樣式 */
 .x-curator-container {
-    width: 100%;
-    min-width: 500px; 
-    max-width: 500px;          /* 限制視窗最大寬度 */
+    width: 100%;               /* 自動填滿父容器的可用寬度 */
+    max-width: 100%;           /* 限制視窗最大寬度 */
     height: 500px;             /* 強制固定視窗高度，防止跳動 */
     min-height: 400px;         /* 最低高度保障 */
     margin: 10px 0;            /* 外距（上下 10px，左右 0） */
