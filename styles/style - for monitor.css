@@ -90,7 +90,7 @@ a + img {
     max-width: 100%;           /* 限制視窗最大寬度 */
     height: 500px;             /* 強制固定視窗高度，防止跳動 */
     min-height: 400px;         /* 最低高度保障 */
-    margin: 10px 2px;            /* 外距（10px 0 =上下 10px，左右 0） */
+    margin: 10px 0;          /* 外距（10px 0 =上下 10px，左右 0） */
     padding: 8px;              /* 內距 */
     background-color: #ffffff; /* 補齊背景色，避免簡短貼文露出底色 */
     border-radius: 8px;        /* 圓角 */
