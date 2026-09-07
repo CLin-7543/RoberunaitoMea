@@ -84,6 +84,36 @@ a + img {
 /* 上文參考：網站外觀 (style - for monitor.css) */
 
 
+/* 2026/0907 新增 */
+/* ============================================================
+   1. [啟用中] X (Twitter) 官方原生 Timeline 視窗樣式
+   ============================================================ */
+.x-official-container {
+    width: 93%;                /* 手動對齊 li 左側縮進，留出右側邊界 */
+    height: 500px;             /* 固定視窗高度 500px */
+    min-height: 400px;
+    margin: 16px 0;            /* 兩個視窗之間的上下間距 */
+    padding: 4px;              
+    background-color: #ffffff; /* 白底襯托卡片 */
+    border-radius: 12px;       /* 圓角視覺 */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    
+    /* 核心設定：確保 Twitter 官方 iframe 內容在固定高度內內部滾動 */
+    overflow-y: auto;          
+    box-sizing: border-box;
+    position: relative;
+}
+
+/* 強制讓 X 官方生成的 iframe 滿版填滿我們的容器 */
+.x-official-container iframe {
+    width: 100% !important;
+    height: 100% !important;
+    border-radius: 8px !important;
+}
+
+
+
+
 /* 自訂 Curator 動態視窗固定範圍與穩定高度樣式 */
 .x-curator-container {
     width: 100%;               /* 自動填滿父容器的可用寬度 */
