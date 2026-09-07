@@ -93,7 +93,9 @@ a + img {
     /* 外距（10px 0 =上下 10px，左右 0；上右下左） */
     margin: 10px 0px 5px 0px;  
     padding: 8px;              /* 內距 */
-    background-color: #ffffff; /* 補齊背景色，避免簡短貼文露出底色 */
+    /* 為避免動態欄內部底色設定被覆蓋，隱藏background-color */
+    /*background-color: #ffffff; */
+    /* 補齊背景色，避免簡短貼文露出底色 */
     border-radius: 8px;        /* 圓角 */
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* 陰影效果 */
     
