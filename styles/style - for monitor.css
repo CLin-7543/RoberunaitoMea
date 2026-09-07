@@ -45,8 +45,8 @@ a + img {
 
 .side_list_block {
         display: block;
-        width: 160px;
-        height: 30vh;
+        min-width: 250px;
+        min-height: 30vh;
         margin: 0px;
         padding: 2px;
         /*border: 2px solid black;*/
